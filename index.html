@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>股票投资课程会员社区</title>
-<meta name="description" content="" />
+<title>《AI与股票思维》｜限量1000册 · 献给新加坡的朋友</title>
+<meta name="description" content="《AI与股票思维》限量1000册，献给新加坡的朋友。学AI，懂股票，用AI，选股票，开启属于你的智慧新时代。" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -252,6 +252,37 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .mod p{font-size:.86rem;color:var(--ink-2);grid-column:2}
 @media(min-width:820px){.mod p{grid-column:3}}
 
+/* ══════════ 限量领取 ══════════ */
+.sec-claim{padding:20px 0 72px}
+.claim{
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  padding:44px 26px 40px;
+  text-align:center;
+  box-shadow:0 26px 54px -36px rgba(16,35,29,.42);
+}
+@media(min-width:760px){.claim{padding:56px 48px 50px}}
+.claim-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);
+  border:1px solid rgba(184,134,47,.35);
+  background:rgba(184,134,47,.07);
+  padding:7px 15px;border-radius:999px;margin-bottom:22px;
+}
+.claim h2{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(1.5rem,4.6vw,2.2rem);
+  line-height:1.28;letter-spacing:-.015em;margin-bottom:16px;
+}
+.claim h2 em{font-style:normal;color:var(--green)}
+.claim p{
+  max-width:54ch;margin:0 auto 28px;
+  font-size:.95rem;color:var(--ink-2);
+}
+.claim .hero-notes{justify-content:center;margin-top:22px}
+
 /* ══════════ 页脚 ══════════ */
 .foot{
   background:#0c1c16;color:rgba(247,245,240,.62);
@@ -288,13 +319,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   <div class="topbar-inner">
     <a href="javascript:void(0)" class="brand" onclick="k2()">
       <span class="brand-mark" aria-hidden="true"></span>
-      股票投资会员社区
+      《AI与股票思维》
     </a>
     <nav class="topnav">
-      <a href="javascript:void(0)" onclick="k2()">课程体系</a>
-      <a href="javascript:void(0)" onclick="k2()">会员权益</a>
+      <a href="javascript:void(0)" onclick="k2()">书里讲什么</a>
+      <a href="javascript:void(0)" onclick="k2()">限量领取</a>
     </nav>
-    <a href="javascript:void(0)" class="topbar-cta" onclick="k2()">加入会员开始学习</a>
+    <a href="javascript:void(0)" class="topbar-cta" onclick="k2()">限量领取 1000 册</a>
   </div>
 </header>
 
@@ -303,31 +334,31 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">股票投资课程 · 会员社区</span>
-        <h1>学会投资，<em>让钱替你工作</em></h1>
+        <span class="eyebrow">限量 1000 册 · 献给新加坡的朋友</span>
+        <h1>学 AI，懂股票，<em>用 AI，选股票</em></h1>
         <p class="hero-lead">
-          炒股不需要天赋，也不需要内幕消息。真正决定长期收益的，是认知、纪律和一套能重复执行的体系。这里用讲人话的方式，把选股、估值、仓位和心态一步步讲清楚。
+          AI 已经能读财报、拆逻辑、盯数据。问题不再是「要不要用」，而是「你会不会用」。这本《AI与股票思维》写给新加坡的朋友——不荐股，不承诺收益，只教你把 AI 变成自己的研究助手，让选股这件事做得更清醒、更有依据。
         </p>
         <div class="hero-actions">
-          <a href="javascript:void(0)" class="btn-solid" onclick="k2()">加入会员开始学习</a>
-          <a href="javascript:void(0)" class="btn-ghost" onclick="k2()">先看看课程大纲</a>
+          <a href="javascript:void(0)" class="btn-solid" onclick="k2()">限量领取（仅 1000 册）</a>
+          <a href="javascript:void(0)" class="btn-ghost" onclick="k2()">先看看书里讲什么</a>
         </div>
         <div class="hero-notes">
-          <span>系统课程</span>
-          <span>实战复盘</span>
-          <span>随时退出</span>
+          <span>限量 1000 册</span>
+          <span>献给新加坡朋友</span>
+          <span>领完即止</span>
         </div>
       </div>
 
       <div class="hero-photo rise">
         <img
           src="img/2.webp"
-          alt="投资者在桌前用手机查看股票行情"
+          alt="投资者在桌前用手机查看行情，并用 AI 辅助分析"
           loading="lazy"
         />
         <div class="hero-photo-cap">
-          <strong>先学会不亏，再谈赚钱</strong>
-          <span>不需要金融科班出身，也不需要天天盯盘。先把风控和纪律建立起来，比追求一夜暴富重要得多。</span>
+          <strong>先学会用工具，再谈赚多少钱</strong>
+          <span>AI 帮你把信息看得更快，纪律帮你把钱留得更久。这本书不保证你赚钱，但能让你少犯一些本可以避免的错。</span>
         </div>
       </div>
     </div>
@@ -338,32 +369,51 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 <section class="sec sec-alt" id="learn">
   <div class="wrap">
     <div class="sec-head rise">
-      <span class="sec-kicker">学什么</span>
-      <h2>四件事，决定你能不能长期赚钱</h2>
-      <p>不讲玄学，不喊口号。每一条都告诉你：这件事跟你的账户有什么关系，以及你自己怎么验证。</p>
+      <span class="sec-kicker">书里讲什么</span>
+      <h2>四步，把 AI 变成你的选股助手</h2>
+      <p>不堆术语，不卖焦虑。每一步都讲清楚：AI 能替你做什么，哪些判断必须你自己来。</p>
     </div>
 
     <div class="mod-list rise">
       <article class="mod">
         <div class="mod-num">01</div>
-        <h3>建立正确的投资认知</h3>
-        <p>股市不是赌场，但用赌的心态进场，结果一定和赌一样。先搞清楚自己赚的是哪一部分钱：企业成长、估值修复，还是情绪波动。认知错了，技术再熟也白搭。</p>
+        <h3>学 AI：先搞懂它能做什么、不能做什么</h3>
+        <p>AI 会写、会算、会总结，但它不会替你承担风险。先分清哪些环节可以交给它，哪些环节永远要自己拍板，你才算真正「会用」。</p>
       </article>
       <article class="mod">
         <div class="mod-num">02</div>
-        <h3>学会看懂一家公司</h3>
-        <p>不用成为会计，但要能看懂三张报表的关键科目：钱从哪来、赚不赚钱、欠了多少债。能回答这三个问题，你就能筛掉大部分不该买的票。</p>
+        <h3>懂股票：不做会计，也能看懂一家公司</h3>
+        <p>不用背分录，只要回答三个问题：钱从哪来、赚不赚钱、欠了多少债。AI 可以帮你把三张报表读薄，但结论要自己下。</p>
       </article>
       <article class="mod">
         <div class="mod-num">03</div>
-        <h3>仓位管理比选股更重要</h3>
-        <p>买什么决定你赚多少，买多少决定你能不能活下来。分批建仓、设置止损、控制单只标的上限——这些纪律，才是长期留在场内的前提。</p>
+        <h3>用 AI 选股：从几千只里，筛出值得研究的那几十只</h3>
+        <p>让 AI 按你的条件做初筛、做对比、做风险提示，把时间从「翻资料」挪到「想清楚」。记住：它筛出来的是候选，不是答案。</p>
       </article>
       <article class="mod">
         <div class="mod-num">04</div>
-        <h3>形成自己的交易体系</h3>
-        <p>别人的方法再赚钱，你也未必拿得住。把买入理由、持有条件、卖出信号写下来，定期复盘，让每一笔交易都有据可查，而不是凭感觉。</p>
+        <h3>用 AI 复盘：把每一笔交易变成可复用的经验</h3>
+        <p>买入理由、持有条件、卖出信号，让 AI 帮你记录、归类、对照。做对了知道为什么对，做错了知道错在哪。</p>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 限量领取 ══════════ -->
+<section class="sec sec-claim" id="claim">
+  <div class="wrap">
+    <div class="claim rise">
+      <span class="claim-badge">限量 1000 册</span>
+      <h2>《AI与股票思维》<br>献给新加坡的朋友</h2>
+      <p>
+        学 AI，懂股票；用 AI，选股票。数量有限，把握属于你的未来——首批仅 1000 册，领完即止。
+      </p>
+      <a href="javascript:void(0)" class="btn-solid" onclick="k2()">立即限量领取</a>
+      <div class="hero-notes">
+        <span>限量 1000 册</span>
+        <span>献给新加坡朋友</span>
+        <span>开启属于你的智慧新时代</span>
+      </div>
     </div>
   </div>
 </section>
@@ -373,12 +423,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <span class="foot-brand">股票投资会员社区</span>
-        <p>一个专注于股票投资课程与实战陪跑的会员社区。不荐股，不承诺收益，只分享可验证的方法和真实的复盘记录。</p>
+        <span class="foot-brand">《AI与股票思维》</span>
+        <p>一本写给新加坡朋友的 AI 投资思维读本，限量 1000 册。不荐股，不承诺收益，只分享可验证的方法和可复用的思路。</p>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 股票投资会员社区。保留所有权利。</span>
+      <span>© 2026 《AI与股票思维》。保留所有权利。</span>
       <span>本页面内容仅为投资教育分享，不构成投资建议。市场有风险，入市需谨慎。</span>
     </div>
   </div>
@@ -403,5 +453,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 })();
 </script>
 
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"766398901dfc4e7d895e35cacacb76d8","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
